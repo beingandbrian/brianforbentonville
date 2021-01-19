@@ -1,0 +1,22 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>{% block title %} Home{% endblock %} | NameItLater</title>
+	<link rel="stylesheet" href="{% static 'bootstrap/dist/css/bootstrap.min.css' %}">
+	<link rel="stylesheet" href="{% static 'font-awesome/css/font-awesome.min.css' %}">
+	<link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+	{% include 'includes/navbar.html' %}
+	{% block content %}
+	{% endblock %}
+
+
+	<script src="{% static 'jquery/dist/jquery.min.js' %}"></script>
+	<script src="{% static 'bootstrap/dist/js/bootstrap.min.js' %}"></script>
+	{% block script %}
+	{% endblock %}
+</body>
+</html>

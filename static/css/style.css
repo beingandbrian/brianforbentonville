@@ -1,0 +1,24 @@
+body{
+  font-family: Arial, sans-serif;
+}
+.secondary{
+	color:black;
+}
+.bold{
+	font-weight:bold;
+}
+.body-wrapper{
+	position:fixed;
+	top:30%;
+}
+
+.form-control:focus{
+color: #000;
+border: 1px solid black;
+box-shadow : none;
+}
+
+.navbar-nav li {
+	margin-left: 2rem;
+}
+
