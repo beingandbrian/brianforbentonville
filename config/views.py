@@ -8,9 +8,11 @@ def home(request):
 
 def contact(request):
     context = dict()
+    context['uri'] = 'contact'
     return render(request, "pages/contact.html", context)
 
 
 def gallery(request):
     context = dict()
+    context['uri'] = 'photos'
     return render(request, "pages/gallery.html", context)

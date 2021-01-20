@@ -24,3 +24,10 @@ box-shadow : none;
 	margin-left: 2rem;
 }
 
+li .active {
+	color:red !important;
+	border-top:1px solid red;
+}
+.text-red{
+	color:red !important;
+}
