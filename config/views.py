@@ -9,3 +9,8 @@ def home(request):
 def contact(request):
     context = dict()
     return render(request, "pages/contact.html", context)
+
+
+def gallery(request):
+    context = dict()
+    return render(request, "pages/gallery.html", context)

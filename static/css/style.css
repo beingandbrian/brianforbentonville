@@ -1,6 +1,7 @@
 body{
   font-family: Arial, sans-serif;
 	letter-spacing:1px;
+	background:#F8F9FA;
 }
 .secondary{
 	color:black;
@@ -22,3 +23,4 @@ box-shadow : none;
 .navbar-nav li {
 	margin-left: 2rem;
 }
+

@@ -8,6 +8,11 @@
 	<link rel="stylesheet" href="{% static 'bootstrap/dist/css/bootstrap.min.css' %}">
 	<link rel="stylesheet" href="{% static 'font-awesome/css/font-awesome.min.css' %}">
 	<link rel="stylesheet" href="{% static 'css/style.css' %}">
+	{% block style %}
+    <link href="https://fonts.googleapis.com/css?family=Droid+Sans:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.css">
+    <link rel="stylesheet" href="gallery-grid.css">
+	{% endblock %}
 </head>
 <body>
 	{% include 'includes/navbar.html' %}

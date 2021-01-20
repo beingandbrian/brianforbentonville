@@ -1,0 +1,76 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block style %}
+    <link href="https://fonts.googleapis.com/css?family=Droid+Sans:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.css">
+		<link rel="stylesheet" href="{% static 'css/gallery-grid.css' %}">
+{% endblock %}
+{% block content %}
+
+<div class="container gallery-container">
+
+	<div class="heading mt-2 pt-3">
+    <h1>Photo Gallery</h1>
+	</div>
+
+    <div class="tz-gallery">
+
+        <div class="row">
+            <div class="col-sm-6 col-md-4">
+							<a class="lightbox" href="..{% static 'images/gallery/1.jpg' %}">
+									<img src="{% static 'images/gallery/2.jpg' %}" alt="Image">
+                </a>
+            </div>
+            <div class="col-sm-6 col-md-4">
+							<a class="lightbox" href="..{% static 'images/gallery/6.jpg' %}">
+									<img src="{% static 'images/gallery/6.jpg' %}" alt="Image">
+                </a>
+            </div>
+            <div class="col-sm-6 col-md-4">
+							<a class="lightbox" href="..{% static 'images/gallery/7.jpg' %}">
+									<img src="{% static 'images/gallery/7.jpg' %}" alt="Image">
+                </a>
+            </div>
+            <div class="col-sm-12 col-md-4">
+                <a class="lightbox" href="..{% static 'images/gallery/8.jpg' %}">
+                    <img src="{% static 'images/gallery/8.jpg' %}" alt="Image">
+                </a>
+            </div>
+            <div class="col-sm-12 col-md-4">
+                <a class="lightbox" href="..{% static 'images/gallery/9.jpg' %}">
+                    <img src="{% static 'images/gallery/9.jpg' %}" alt="Image">
+                </a>
+            </div>
+            <div class="col-sm-12 col-md-4">
+                <a class="lightbox" href="..{% static 'images/gallery/11.jpg' %}">
+                    <img src="{% static 'images/gallery/11.jpg' %}" alt="Image">
+                </a>
+            </div>
+
+            <div class="col-sm-12 col-md-4">
+                <a class="lightbox" href="..{% static 'images/gallery/14.jpg' %}">
+                    <img src="{% static 'images/gallery/14.jpg' %}" alt="Image">
+                </a>
+            </div>
+            <div class="col-sm-12 col-md-4">
+                <a class="lightbox" href="..{% static 'images/gallery/16.jpg' %}">
+                    <img src="{% static 'images/gallery/16.jpg' %}" alt="Image">
+                </a>
+            </div>
+            <div class="col-sm-12 col-md-4">
+                <a class="lightbox" href="..{% static 'images/gallery/30.jpg' %}">
+                    <img src="{% static 'images/gallery/30.jpg' %}" alt="Image" >
+                </a>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js"></script>
+<script>
+    baguetteBox.run('.tz-gallery');
+</script>
+{% endblock %}
