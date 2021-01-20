@@ -1,13 +1,37 @@
 {% extends 'base.html' %}
-
+{% load static %}
 
 {% block content %}
 <div class="container">
+
+	<!-- banner -->
 	<div class="row">
 		<div class="col-12">
 			<div class="banner-wrapper mt-5" style="background:red;">
 				<div class="banner-body p-5 text-center">
 					<h1 class="text-white">Brian Lyew for Bentonville City Council</h1>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- banner -->
+	<div class="row">
+		<div class="col-12">
+			<div class="jumbotron-wrapper">
+				<div class="jumbotron-body">
+					<div class="row">
+						<div class="col-7">
+							<div class="image p-3">
+								<img src="{% static 'images/brian.jpg' %}" alt="Image here"
+								class="img-responsive" id="brianHero"
+								style="width:90%;">
+							</div>
+						</div>
+						<div class="col-5">
+	t is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).						bello
+
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
