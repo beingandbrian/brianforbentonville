@@ -19,7 +19,7 @@ from django.conf.urls.static import static
 from django.contrib import admin
 from django.urls import include, path
 
-from config.views import home
+from config.views import home, contact
 
 admin.site.site_header = "Admin"
 admin.site.site_title = "Admin Portal"
@@ -27,6 +27,7 @@ admin.site.index_title = "Welcome to Admin Portal"
 
 urlpatterns = [
     path('', home, name='home'),
+    path('contact', contact, name='contact'),
     path('admin/', admin.site.urls),
     path('api-auth/', include('rest_framework.urls')),
     path('api/v1/', include('apps.api.v1.urls')),

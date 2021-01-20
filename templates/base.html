@@ -3,7 +3,8 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>{% block title %} Home{% endblock %} | NameItLater</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>{% block title %} Brian For Bentonville {% endblock %}</title>
 	<link rel="stylesheet" href="{% static 'bootstrap/dist/css/bootstrap.min.css' %}">
 	<link rel="stylesheet" href="{% static 'font-awesome/css/font-awesome.min.css' %}">
 	<link rel="stylesheet" href="{% static 'css/style.css' %}">
@@ -12,7 +13,7 @@
 	{% include 'includes/navbar.html' %}
 	{% block content %}
 	{% endblock %}
-
+	{% include 'includes/footer.html' %}
 
 	<script src="{% static 'jquery/dist/jquery.min.js' %}"></script>
 	<script src="{% static 'bootstrap/dist/js/bootstrap.min.js' %}"></script>

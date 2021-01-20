@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<div class="container">
+
+	<!-- banner -->
+	<div class="row">
+		<div class="col-12">
+			<div class="banner-wrapper mt-lg-3" style="background:red;">
+				<div class="banner-body p-lg-4 text-center">
+					<h1 class="text-white">Brian Lyew for Bentonville City Council</h1>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- banner -->
+	<div class="row">
+		<div class="col-12">
+			<div class="jumbotron-wrapper">
+				<div class="jumbotron-body">
+					<div class="row">
+						<div class="col-12">
+							<div class="image mt-lg-3 mt-sm-2">
+								<img src="{% static 'images/contact.png' %}" alt="Image here"
+								class="img-responsive" id="brianHero"
+								style="width:100%; height:auto;">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+{% endblock %}
