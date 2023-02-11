@@ -23,11 +23,8 @@ services:
         volumes:
             - staticfiles:/app/staticfiles
             - mediafiles:/app/mediafiles
-        env_file:
-            - .env.prod
         depends_on:
             - redis
-            - fvgdb
         ports:
             - 8000:8000
     redis:
