@@ -11,3 +11,5 @@ RUN mkdir -p /app/staticfiles
 RUN mkdir -p /app/mediafiles
 RUN chmod 755 /app/staticfiles
 RUN chmod 755 /app/mediafiles
+
+# certbot --nginx --register-unsafely-without-email --agree-tos --no-eff-email -d brianforbentonville.com
