@@ -1,0 +1,42 @@
+version: '3.3'
+
+services:
+    proxy:
+        build:
+            context: ./proxy
+        volumes:
+            - staticfiles:/app/staticfiles
+            - mediafiles:/app/mediafiles
+            - certs:/etc/letsencrypt
+            - confd:/etc/nginx/conf.d
+        restart: always
+        ports:
+            - 80:80
+            - 443:443
+        depends_on:
+            - web
+    web:
+        build:
+            context: .
+            dockerfile: .Dockerfile.prod
+        command: /start
+        volumes:
+            - staticfiles:/app/staticfiles
+            - mediafiles:/app/mediafiles
+        env_file:
+            - .env.prod
+        depends_on:
+            - redis
+            - fvgdb
+        ports:
+            - 8000:8000
+    redis:
+        image: redis:6-alpine
+
+
+volumes:
+    postgres_data:
+    staticfiles:
+    mediafiles:
+    confd:
+    certs:
