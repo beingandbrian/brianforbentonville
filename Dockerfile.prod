@@ -33,7 +33,6 @@ RUN chown django /start
 
 
 RUN mkdir /static
-RUN mkdir /media
 
 WORKDIR /
 
