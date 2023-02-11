@@ -5,8 +5,8 @@ services:
         build:
             context: ./proxy
         volumes:
-            - staticfiles:/app/staticfiles
-            - mediafiles:/app/mediafiles
+            - static:/static
+            - media:/media
             - certs:/etc/letsencrypt
             - confd:/etc/nginx/conf.d
         restart: always
