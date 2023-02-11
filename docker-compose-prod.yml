@@ -34,8 +34,7 @@ services:
 
 
 volumes:
-    postgres_data:
-    staticfiles:
-    mediafiles:
+    static:
+    media:
     confd:
     certs:
