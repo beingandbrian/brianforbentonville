@@ -39,7 +39,7 @@ WORKDIR /
 # copy project code
 COPY . .
 
-RUN chown -R django:django /app
+RUN chown -R django:django /
 
 USER root
 ENTRYPOINT ["/entrypoint"]
