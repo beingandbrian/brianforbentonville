@@ -5,7 +5,7 @@ services:
         build:
             context: ./proxy
         volumes:
-            - static:/static
+            - staticfiles:/staticfiles
             - media:/media
             - certs:/etc/letsencrypt
             - confd:/etc/nginx/conf.d
@@ -21,7 +21,7 @@ services:
             dockerfile: ./Dockerfile.prod
         command: /start
         volumes:
-            - static:/static
+            - staticfiles:/staticfiles
             - media:/media
         env_file:
             - .env/.prod
@@ -34,7 +34,7 @@ services:
 
 
 volumes:
-    static:
+    staticfiles:
     media:
     confd:
     certs:
